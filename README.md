@@ -1,19 +1,20 @@
-# Colyseus server for BabylonJS demo!
+# (Server-side) BabylonJS: Real-time Multiplayer with Colyseus
 
-This project has been created using [⚔️ `create-colyseus-app`](https://github.com/colyseus/create-colyseus-app/) - an npm init template for kick starting a Colyseus project in TypeScript.
+This is the server code for a step-by-step tutorial on how to use BabylonJS + Colyseus together.
 
-[Documentation](http://docs.colyseus.io/)
+- [See step-by-step Tutorial](https://doc.babylonjs.com/guidedLearning/multiplayer/Colyseus)
+- [See client-side Project](https://github.com/colyseus/tutorial-babylonjs-client)
+- [See Colyseus documentation](https://docs.colyseus.io/)
 
-[PlayCanvas Demo](https://colyseus-babylon-demo.herokuapp.com/index.html)
+## How to run the server
 
-## :crossed_swords: Prerequisites
-First install dependencies using npm.
-```
-npm install
-```
+- Download and install [Node.js LTS](https://nodejs.org/en/download/)
+- Clone or download this repository.
+- Run `npm install`
+- Run `npm start`
 
-## :crossed_swords: Usage
+The WebSocket server should be available locally at `ws://localhost:2567`, and [http://localhost:2567](http://localhost:2567) should be accessible.
 
-```
-npm start
-```
+## License
+
+MIT

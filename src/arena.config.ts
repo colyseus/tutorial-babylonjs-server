@@ -1,14 +1,13 @@
 import Arena from "@colyseus/arena";
 import { monitor } from "@colyseus/monitor";
 
-import { GameRoom } from "./rooms/GameRoom";
+import { MyRoom } from "./rooms/MyRoom";
 
 export default Arena({
-    getId: () => "Babylon Colyseus Demo App",
+    getId: () => "BabylonJS and Colyseus Demo Server",
 
     initializeGameServer: (gameServer) => {
-        gameServer.define('my_game', GameRoom);
-
+        gameServer.define('my_room', MyRoom);
     },
 
     initializeExpress: (app) => {
